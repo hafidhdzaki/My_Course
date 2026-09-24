@@ -4,6 +4,15 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
-
-    <style name="Theme.MyCourseGue" parent="Base.Theme.MyCourseGue" />
+    <!-- Base application theme with ActionBar. -->
+    <style name="Base.Theme.MyCourseGue.WithActionBar"
+        parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here, similar to the theme without
+        ActionBar. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    <!-- Themes that can be applied to the application or specific activities. -->
+    <style name="Theme.MyCourseGue" parent="Base.Theme.MyCourse" />
+    <style name="Theme.MyCourseGue.WithActionBar"
+        parent="Base.Theme.MyCourse.WithActionBar" />
 </resources>
