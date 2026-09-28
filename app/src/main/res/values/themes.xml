@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.MyCourseGue" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.MyCourseGue" parent="Theme.Material3.DayNight">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
@@ -14,5 +14,5 @@
     <!-- Themes that can be applied to the application or specific activities. -->
     <style name="Theme.MyCourseGue" parent="Base.Theme.MyCourse" />
     <style name="Theme.MyCourseGue.WithActionBar"
-        parent="Base.Theme.MyCourse.WithActionBar" />
+        parent="Base.Theme.MyCourseGue.WithActionBar" />
 </resources>
