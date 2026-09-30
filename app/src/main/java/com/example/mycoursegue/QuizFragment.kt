@@ -16,24 +16,30 @@ private const val ARG_PARAM2 = "param2"
  * Use the [QuizFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
+// Kunci konstanta unik untuk membaca parameter data dari Bundle
 class QuizFragment : Fragment() {
     // TODO: Rename and change types of parameters
+    // Variabel penampung data parameter yang dikirim ke QuizFragment
     private var param1: String? = null
     private var param2: String? = null
 
+    // Subkelas Fragment untuk menampilkan halaman/fitur Kuis.
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // Membaca argumen yang dikirim melalui Bundle jika ada
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
     }
 
+    // Method siklus hidup untuk memuat tampilan visual (UI) dari QuizFragment
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+        // Mengubah layout XML (fragment_quiz.xml) menjadi objek View di layar
         return inflater.inflate(R.layout.fragment_quiz, container, false)
     }
 
@@ -47,6 +53,7 @@ class QuizFragment : Fragment() {
          * @return A new instance of fragment QuizFragment.
          */
         // TODO: Rename and change types and number of parameters
+        // Factory method untuk membuat instance baru QuizFragment dengan parameter secara aman.
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             QuizFragment().apply {

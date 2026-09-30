@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    android:orientation="vertical"
+    tools:context=".MateriFragment">
         <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Materi" />
-</FrameLayout>
+        android:layout_height="wrap_content"
+        android:text="Daftar Materi Praktikum"
+        style="@style/CustomTextView18Bold"
+        android:textAlignment="textStart"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="70dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvModul"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

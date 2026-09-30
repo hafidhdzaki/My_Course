@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">MyTabLayout</string>
+    <string name="app_name">Class Room</string>
     <string name="tab_text_1">Home</string>
-    <string name="tab_text_2">Profile</string>
-    <string name="tab_text_3">Setting</string>
+    <string name="tab_text_2">Materi</string>
+    <string name="tab_text_3">Quiz</string>
+    <string name="desc_home">Kelas ini membahas dasar-dasar Android Development menggunakan Kotlin, Layouting, hingga pengaturan style.</string>
 </resources>

@@ -7,23 +7,51 @@
     android:padding="16dp"
     android:orientation="vertical"
     tools:context=".HomeFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        android:layout_marginHorizontal="16dp"
+        android:src="@drawable/android_developer"
+        android:layout_marginBottom="16dp">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Praktikum Pemrograman Perangkat Bergerak"
+        style="@style/CustomTextView18Bold"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:text="Manu"
-        style="@style/CustomTextView18Bold"/>
+        android:textAlignment="center"
+        android:text="Kelas : PL3B1 | Semester Ganjil">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DESKRIPSI KELAS"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/desc_home">
+
+    </TextView>
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_oop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Materi OOP"
-        style="@style/CustomRoundedButton" />
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_android"
-        android:layout_marginTop="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Materi Android"
+        android:text="LIHAT SILABUS KELAS"
         style="@style/CustomRoundedButton" />
 </LinearLayout>
